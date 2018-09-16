@@ -3,7 +3,7 @@ layout: home
 title: "First Post"
 date: 2018-09-12
 author: Patrick
-permalink: blog/First-Post.html
+
 ---
 Hello my name is Patrick Hogeveen I am a computer science student at the university of Toronto Mississauga Campus (Obviously). I'm not a very good writer by any stretch of the imagination so I am hoping to improve that this semester. I suppose anything computer science related wouldn't be a very interesting fact as this is a computer science class. In that case I guess something interesting about me is that I used to be a runner but when university started my motivation to run dropped to an all time low. Hopefully I can meet some people who also like to run during this course.
 
