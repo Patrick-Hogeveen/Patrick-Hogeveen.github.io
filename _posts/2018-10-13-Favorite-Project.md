@@ -3,7 +3,7 @@ layout: home
 title: "Favorite project"
 date: 2018-10-13
 author: Patrick
-permalink: 2018/10/13/Project.html
+permalink: 2018/10/13/Favorite-Project.html
 ---
 There are two projects that come to mind as my favorite and the ones I am most proud of. Both are computer related which must come as a big shock. The first would be when I built my first computer, unsurprisingly I loved playing video games so it made sense to try something of that nature. The second would be my eleventh grade final programming project, building minesweeper. 
 
