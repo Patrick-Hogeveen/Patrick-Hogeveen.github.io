@@ -1,3 +1,8 @@
 body {
   background: url(webback.jpg);
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
