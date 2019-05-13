@@ -7,11 +7,17 @@ ul {
   padding: 0;
 }
 li {
-	float: left;
+	float: inline-block;
 }
 
-a {
+li a {
 	display: block;
-	padding: 8px;
+	text-align: center;
+	padding: 14px 16px;
 	background-color: #dddddd;
+	text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
 }
