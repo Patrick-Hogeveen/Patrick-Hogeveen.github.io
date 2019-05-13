@@ -8,7 +8,7 @@ ul {
   background-color: #333;
 }
 li {
-	float: inline-block;
+	float: left;
 }
 
 li a {
