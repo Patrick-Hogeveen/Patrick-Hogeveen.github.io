@@ -1,0 +1,33 @@
+#bar{
+    width: 100%;
+    min-height: 6vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+    transition: all .7s ease-in;
+    margin-bottom:5px;
+    padding-bottom: 1em;
+  }
+ 
+  .scrolled{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: lightblue;
+  }
+  .logo img{
+    width: 50px;
+  }
+  .nav{
+     margin-bottom: 1em;
+  }
+  #bar:before{
+      content: " ";
+    background: inherit;
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.3);
+    filter: blur(10px);
+    overflow: hidden; 
+   }
+   
