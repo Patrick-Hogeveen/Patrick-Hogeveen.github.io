@@ -1,0 +1,30 @@
+.wrapper {
+    width: 24%;
+    display: block;
+    padding: 10px;
+    margin: auto;
+    background-color: #e1e6eb;
+    /*background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);*/
+  }
+
+.input {
+    
+    display: flex;
+    justify-content: flex-end;
+    line-height: 2em;
+    padding: 1rem;
+}
+.output {
+    
+    display: flex;
+    justify-content: flex-end;
+    line-height: 2em;
+    padding: 1rem;
+}
+
+.inpName {
+    padding-right: 1rem;
+}
+.title {
+    padding-top: 5%;
+}

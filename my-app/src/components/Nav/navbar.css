@@ -9,6 +9,7 @@
     transition: all .7s ease-in;
     margin-bottom:5px;
     padding-bottom: 1em;
+    padding: 1%;
   }
  
   .scrolled{
@@ -30,4 +31,6 @@
     filter: blur(10px);
     overflow: hidden; 
    }
+
+  
    

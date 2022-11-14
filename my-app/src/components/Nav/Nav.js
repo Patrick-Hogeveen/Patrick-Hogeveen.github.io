@@ -15,7 +15,7 @@ import {
 
 const Navibar=() => {
     return(
-        <div>
+        <div >
             <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,8 +25,9 @@ const Navibar=() => {
         <nav className="nav justify-content-center fixed-top navbar-expand-lg navbar-light" id="bar">
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav">
-          <Link className="nav-link active navbar-brand" to={"#About"}>About</Link>
-          <Link className="nav-link active navbar-brand" to={"#Experience"}>Experience</Link>
+          <a className="nav-link active navbar-brand" href={"/#About"}>About</a>
+          <a className="nav-link active navbar-brand" href={"/#Experience"}>Experience</a>
+          <a className="nav-link active navbar-brand" href={"/#Work and Projects"}>Work and Projects</a>
           
 
         </div>
