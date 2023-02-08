@@ -1,0 +1,20 @@
+.butter_input {
+    margin: 5%;
+    color: #ebdbb2;
+}
+.butter_input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.butter_image {
+    margin:2%;
+}
+
+.butter_result {
+    color: #ebdbb2;
+}
+
+.snippet {
+    color: #ebdbb2;
+    flex-wrap: wrap;
+    text-align: left;
+}

@@ -1,4 +1,9 @@
 
 .Title {
-    padding-top: 5%;
+    padding-top: 0%;
+}
+body {
+    background-image: url(../../autumn_upscale.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }

@@ -1,4 +1,4 @@
-import "./wrapper.css"
+import styles from "./wrapper.css"
 
 
 const Output = ({name, ptoc}) => {

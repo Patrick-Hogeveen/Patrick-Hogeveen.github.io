@@ -1,0 +1,41 @@
+.term {
+    border: 0.15em solid #458588;
+    width:60%;
+    margin: 5% auto;
+    background-color: rgb(40,40,40,0.75)
+    
+    
+}
+.innerterm {
+    width:60%;
+    margin: 5% auto;
+    
+    
+    
+}
+.title{
+    padding:0% !important;
+    color: #ebdbb2;
+    text-align: center;
+}
+a {
+    color: #ebdbb2 !important;
+}
+.text {
+    color: #ebdbb2;
+    width: 90%;
+    margin: 2% auto;
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+.text-project {
+    color: #ebdbb2;
+    text-align: left;
+}
+
+.link-text {
+    padding:0% !important;
+    color: #ebdbb2;
+    text-align: center;
+}

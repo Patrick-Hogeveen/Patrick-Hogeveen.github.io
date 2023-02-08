@@ -3,7 +3,8 @@
     display: block;
     padding: 10px;
     margin: auto;
-    background-color: #e1e6eb;
+    border: 0.15em solid #d65d0e;
+    background-color: rgb(40,40,40,0.75)
     /*background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);*/
   }
 
@@ -13,6 +14,7 @@
     justify-content: flex-end;
     line-height: 2em;
     padding: 1rem;
+
 }
 .output {
     
@@ -24,7 +26,13 @@
 
 .inpName {
     padding-right: 1rem;
+    color: #ebdbb2;
 }
-.title {
-    padding-top: 5%;
+.title_binom {
+    color: #ebdbb2;
+    width:50%;
+    margin: 5% auto;
+    height:50%;
+    background-color: rgb(40,40,40,0.75);
+    border: 0.015em solid #cc241d;
 }

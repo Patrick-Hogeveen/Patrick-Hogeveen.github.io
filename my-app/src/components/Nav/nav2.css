@@ -1,0 +1,22 @@
+.fixed-top {
+    padding-top: 20em;
+    position: fixed;
+    top: 0;
+    width:97%;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    display: flex;
+    
+    margin: 10px auto;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+.navbar {
+    margin: 10px auto;
+}
+.container {
+    width:10%;
+}

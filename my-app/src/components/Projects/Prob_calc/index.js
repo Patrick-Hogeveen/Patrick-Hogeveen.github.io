@@ -1,8 +1,8 @@
-import "./wrapper.css"
+//import styles from "./wrapper.css"
 import Input from "./input"
 import Output from "./output";
 import {useState} from 'react';
-import { Navibar } from "../Nav/Nav"
+import { Navibar } from "../../Nav/Nav"
 
 
 function factn(n){
@@ -47,11 +47,12 @@ function calc_all(chance, trials, success){
 }
 
 const Prob_calc = ({ children }) => {
+    const Successes = 'x'
 
     const inputDatas = [
         {
             id: 1,
-            name: 'Success of Trial',
+            name: 'Probability of Success',
             value: 0
         },
         {
@@ -68,7 +69,7 @@ const Prob_calc = ({ children }) => {
     const outputDatas = [
         {
             id: 1,
-            name: 'P(X=x)',
+            name: 'P(X='+Successes+')',
             value: 0
         },
         {
@@ -95,6 +96,7 @@ const Prob_calc = ({ children }) => {
 
 const [data, setData] = useState(inputDatas)
 const [odata, setOdata] = useState(outputDatas)
+const [numSuccesses, setSuccesses] = useState(Successes)
 
     
 
@@ -129,13 +131,14 @@ const [odata, setOdata] = useState(outputDatas)
             
         });
         setOdata(newArray)
+        setSuccesses(Successes)
         
     }
 
     return (
         <>
         <Navibar />
-    <h1 className="title">Binomial Probability Calculator</h1>
+    <h1 className="title_binom">Binomial Probability Calculator</h1>
     <div className="wrapper">
         
         {
