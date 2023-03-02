@@ -18,3 +18,13 @@
     flex-wrap: wrap;
     text-align: left;
 }
+
+.usage {
+    
+    color: #ebdbb2;
+    width: 90%;
+    margin: 2% auto;
+    text-align: center;
+    white-space: pre-wrap;
+    
+}

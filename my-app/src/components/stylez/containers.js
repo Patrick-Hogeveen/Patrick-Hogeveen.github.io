@@ -5,8 +5,8 @@ var Latex = require("react-latex")
 
 function TermBox({title, text}) {
     return (
-        <div class='term'>
-            <h1 class="title">{title}</h1>
+        <div class='term' id={title}>
+            <h1 class="title" >{title}</h1>
             <div class="text">{text}</div>
         </div>
     )

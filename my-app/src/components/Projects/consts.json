@@ -4,7 +4,7 @@
         "description" : "A binomial probability calculator written in javascript. Made when I got bored of googling one everytime I needed to calculate the odds of something. The probability of obtaining x successes in n trials is given as $P_{x} = \\binom{n}{x} p^x q^{n-x}$ where $\\binom{n}{k} = \\frac{n!}{k!(n-k)!}$"
     },
     "butterfly_classifier" : {
-        "title" : "Butterfly Classifier",
+        "title" : "Butterfly and Moth Classifier",
         "description" : "Practice project while learning to work with the fastai platform. Classifies around 100 different species of butterfly and moth. "
     }
 
