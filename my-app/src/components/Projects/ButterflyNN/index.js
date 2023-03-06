@@ -106,7 +106,7 @@ const Butterfly = () => {
                 </div>
                 <div className="term">
                     <h2 className="title">Project Details</h2>
-                    <p className="text">This was written in python using the fasiai deep learning library to create and train the model. The dataset was provided from kaggle <a href="https://www.kaggle.com/datasets/gpiosenka/butterfly-images40-species" >@here</a>.
+                    <p className="text">This was written in python using the fastai deep learning library to create and train the model. The dataset was provided from kaggle <a href="https://www.kaggle.com/datasets/gpiosenka/butterfly-images40-species" >@here</a>.
                     Initially the validation set was a little smaller than I'd liked it to be so I moved some of the training images into it, while modifying the datasets I also noticed the classes were more unbalanced than I'd like as shown here.<img src={class_img} style={{height:"70%", width:"100%", margin:"2% auto", backgroundColor:"white"}}></img>
                     After discovering this I duplicated and transformed some of the images of the less represented classes until each had an equal share. After cleaning up the data it was down to deciding on a model. <br/><br/><br/>
                     The first model I tried was <a href="https://arxiv.org/pdf/1512.03385.pdf">resnet18</a> a well known residual convolutional based network, it performed well in training and testing however when trying it against real pictures taken by a friend it seemed to misclassify very easy examples. After discovering this I then decided to try a more complex network.
