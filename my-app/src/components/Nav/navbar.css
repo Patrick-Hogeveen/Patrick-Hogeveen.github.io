@@ -1,11 +1,11 @@
    .navbar {
     padding: 0em !important;
-    position: fixed;
+    position: absolute;
     top: 0;
     width:97%;
     right: 0;
     left: 0;
-    z-index: 1030;
+    z-index: 9 !important;
     display: flex;
     
     margin: 10px auto;

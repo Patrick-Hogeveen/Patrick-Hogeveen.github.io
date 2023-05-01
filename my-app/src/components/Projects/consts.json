@@ -1,12 +1,18 @@
 {
-    "probability_calculator" : {
-        "title" : "Probability Calculator",
-        "description" : "A binomial probability calculator written in javascript. Made when I got bored of googling one everytime I needed to calculate the odds of something. The probability of obtaining x successes in n trials is given as $P_{x} = \\binom{n}{x} p^x q^{n-x}$ where $\\binom{n}{k} = \\frac{n!}{k!(n-k)!}$"
+    "3D_mesh_generator" : {
+        "title" : "3D Mesh Generator",
+        "description" : "Creating 3d terrain and shapes utilizing noise functions to generate data and algorithms to generate the mesh out of the noise. Currently only uses simplex noise and marching cubes for the data and mesh respectively."
     },
     "butterfly_classifier" : {
         "title" : "Butterfly and Moth Classifier",
         "description" : "Practice project while learning to work with the fastai platform. Classifies around 100 different species of butterfly and moth. "
+    },
+    "probability_calculator" : {
+        "title" : "Probability Calculator",
+        "description" : "A binomial probability calculator written in javascript. Made when I got bored of googling one everytime I needed to calculate the odds of something. The probability of obtaining x successes in n trials is given as $P_{x} = \\binom{n}{x} p^x q^{n-x}$ where $\\binom{n}{k} = \\frac{n!}{k!(n-k)!}$"
     }
+    
+    
 
 
 }
