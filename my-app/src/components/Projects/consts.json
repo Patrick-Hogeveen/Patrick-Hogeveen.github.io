@@ -10,6 +10,10 @@
     "probability_calculator" : {
         "title" : "Probability Calculator",
         "description" : "A binomial probability calculator written in javascript. Made when I got bored of googling one everytime I needed to calculate the odds of something. The probability of obtaining x successes in n trials is given as $P_{x} = \\binom{n}{x} p^x q^{n-x}$ where $\\binom{n}{k} = \\frac{n!}{k!(n-k)!}$"
+    },
+    "stock_predictor" : {
+        "title" : "Stock Value Predictor",
+        "description" : "A final year machine learning project researched and created along with 3 other team members. We set about selecting a problem and were to research and implement a machine learning based solution."
     }
     
     

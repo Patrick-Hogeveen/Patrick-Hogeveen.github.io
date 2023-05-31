@@ -17,21 +17,6 @@ import './navbar.css'
 //import '../bootstrap/dist/css/bootstrap.min.css';
 
 
-const NaviBar2=() => {
-  return (
-    
-    <Navbar bg="dark" variant="dark">
-      
-      <Nav>
-        <Nav.Link href="/#About">About</Nav.Link>
-        <Nav.Link href="/#Experience">Experience</Nav.Link>
-        <Nav.Link href="/#Work and Projects">Work and Projects</Nav.Link>
-      </Nav>
-      
-    </Navbar>
-   
-  )
-}
 
 const Navibar=() => {
     return(
@@ -41,7 +26,7 @@ const Navibar=() => {
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav">
           <a className="nav-link active navbar-brand" href={"/#About"}>About</a>
-          <a className="nav-link active navbar-brand" href={"/#Experience"}>Experience</a>
+          <a className="nav-link active navbar-brand" href={"/#Skills and Experience"}>Experience</a>
           <a className="nav-link active navbar-brand" href={"/#Work and Projects"}>Work and Projects</a>
           
 
@@ -55,4 +40,4 @@ const Navibar=() => {
 
 
 
-export { Navibar, NaviBar2};
+export { Navibar};
