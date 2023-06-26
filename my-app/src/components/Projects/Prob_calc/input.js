@@ -1,11 +1,11 @@
 //import styles from "./wrapper.css"
 
 
-const Input = ({name, event}) => {
+const Input = ({name, event, index}) => {
     return (
-        <div className="input">
-            <div className="inpName">{name}</div>
-            <input type="number" onChange={event}/>
+        <div className="input" key={index+"t"}>
+            <div key={index}className="inpName">{name}</div>
+            <input key={index+"inp"} type="number" min="0" onChange={event}/>
         </div>
     )
 } ;
