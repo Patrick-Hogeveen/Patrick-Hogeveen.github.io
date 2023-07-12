@@ -1,5 +1,5 @@
 .wrapper {
-    width: 70%;
+    width: 80%;
     display: block;
     padding: 10px;
     margin-top: 1px !important;
@@ -12,18 +12,20 @@
 
 .input {
     
-    display: flex;
-    justify-content: flex-end;
+    display: inline-block;
+    justify-content: flex-start;
     line-height: 2em;
-    padding: 1rem;
+    padding: 0.5rem;
+    
+    
 
 }
 .output {
     
-    display: flex;
+    display: inline-block;
     justify-content: flex-end;
     line-height: 2em;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .inpName {
@@ -37,4 +39,19 @@
     height:50%;
     background-color: rgb(40,40,40,0.75);
     border: 0.015em solid #cc241d;
+}
+
+input {
+    background: transparent;
+  
+  outline: none;
+  min-height: 20px;
+  padding: 0;
+  box-shadow: none;
+  display: block;
+  border: 2px solid #d65d0e;
+  overflow: hidden;  
+  transition: height 0.2s ease;
+  width:5rem;
+  color: white;
 }

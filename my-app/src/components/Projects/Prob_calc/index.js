@@ -2,7 +2,7 @@
 import Input from "./input"
 import Output from "./output";
 import {useState, useEffect} from 'react';
-import { Navibar } from "../../Nav/Nav"
+import { Navibar, NavBar2 } from "../../Nav/Nav"
 import init, { all_probability } from "wasm-lib"
 
 import Chart from "./barchart";
@@ -12,6 +12,7 @@ import Chart from "./barchart";
 function calc_allvals(probabilities, success){
     var equal = probabilities[success]
     var atleast = probabilities.slice(success,probabilities.length).reduce((a,b) => a + b)
+    atleast = atleast>1 ? 1 : atleast
     var more = atleast - equal
     var lessequal = 1 - more
     var less = 1 - atleast
@@ -35,7 +36,7 @@ const Prob_calc = ({ children }) => {
         },
         {
             id: 3,
-            name: 'Number of Successes (x)',
+            name: '#Successes (x)',
             value: 0
         }
     ]
@@ -71,6 +72,27 @@ const [data, setData] = useState(inputDatas)
 const [odata, setOdata] = useState(outputDatas)
 const [numSuccesses, setSuccesses] = useState(Successes)
 const [probabilities, setProbabilities] = useState([])
+
+const [dimensions, setDimensions] = useState({ 
+    height: window.innerHeight,
+    width: window.innerWidth
+  })
+
+  useEffect(() => {
+    function handleResize() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth
+      })
+    
+}
+
+    window.addEventListener('resize', handleResize)
+
+    return _ => {
+        window.removeEventListener('resize', handleResize)
+    }
+  })
 
     useEffect(() => {
         if (probabilities.length > 0) {
@@ -127,36 +149,45 @@ const [probabilities, setProbabilities] = useState([])
 
     return (
         <>
-        <Navibar />
+        <NavBar2 />
     <h1 className="title_binom">Binomial Probability Calculator</h1>
     <div className="wrapper">
-        <div className="row" style={{justifyContent: 'center'}}>
-        <div className="col-md-4" >
+        
+        <div className="row" style={{display:'flex', justifyContent:"start"}} >
         {
             data.map((datum, index) => {
                 return (
+                    <div className="col" style={{width:"0.1%"}} >
                     <Input name={datum.name} event={updateState(index)} index={index}/>
+                    </div>
                 )
             })
         }
+        </div>
+        
+        <button id="calc" onClick={clickHandler}>Calculate</button>
+        
+        
+            <Chart width={dimensions.width/2.5} height={dimensions.width/3} data={probabilities} />
+            
+        
+        
+        <div className="row" >
         {
             odata.map((datum, index) => {
                 return (
+                    <div className="col">
                     <Output name={datum.name} ptoc={datum.value} />
+                    </div>
                 )
             })
 
         }
-        <button id="calc" onClick={clickHandler}>Calculate</button>
-        </div>
-        <div className="col-md-7">
-            <Chart width={800} height={600} data={probabilities} />
-            
-        </div>
         </div>
     </div>
     </>
     )
+    
   };
   
   export default Prob_calc;

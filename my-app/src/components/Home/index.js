@@ -1,4 +1,4 @@
-import { Navibar } from "../Nav/Nav.js"
+import { Navibar, NavBar2 } from "../Nav/Nav.js"
 import './index.css'
 import {Link} from "react-router-dom"
 import {TermBox, ProjectBoxs} from "../stylez/containers.js"
@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <>
         <div class="site">
-            <Navibar/>
+            <NavBar2/>
             <TermBox title="About" text="Hi, my name is Patrick Hogeveen I am a recent graduate from the University of Toronto with an Honors Bachelor of Science and a specialist in Computer Science. I have a great love of technology and more specifically computer science and engineering as I have always enjoyed learning how complex or interesting things work.  In my spare time I enjoy working on interesting side projects, reading fantasy novels, playing video games and running.">
                 
             </TermBox>

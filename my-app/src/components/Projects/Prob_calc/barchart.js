@@ -19,8 +19,8 @@ function Chart({ width, height, data }){
     const draw = () => {
         
         const left_offset = 50
-        const top_offset = 50;
-        const bottom_offset = 50;
+        const top_offset = width/12;
+        const bottom_offset = width/12;
         const bar_width = (width-50)/data.length
         const spacing = 0.15 * bar_width;
         const bar_color= "#38CB56"
@@ -34,7 +34,7 @@ function Chart({ width, height, data }){
         //y axis
         const scale_y_axis = d3.scaleLinear()
             .domain([Math.max(...data), 0])
-            .range([0, height -  bottom_offset]);
+            .range([0, height -  top_offset]);
 
         function shadeColor(color, percent) {
 
@@ -97,7 +97,7 @@ function Chart({ width, height, data }){
             .attr("fill", bar_color)
             
                 .attr("height", (d) => yScale(d))
-                .attr("y", (d) => height - yScale(d)-25)
+                .attr("y", (d) => height - yScale(d)-10)
             .on("mouseover", function(event, d) {
                     tooltip.html(`Data: ${d}`).style("visibility", "visible");
                     d3.select(this)
@@ -131,13 +131,14 @@ function Chart({ width, height, data }){
             .attr("text-anchor", "middle")
             .attr("fill", "#FFFFFF")
             .attr("x", (d, i) => left_offset + bar_width * i + bar_width/2 - spacing/2)
-            .attr("y", 600 - bottom_offset + 30)
+            .attr("y", height - 10)
             .attr("style", "font-family:Verdana")
             .text((d,i) => i)
             .attr("font-size", '7px')
-            
+        
+        var length = yScale(Math.max(...data))
         var yAxis = svg.append("g")
-            .attr("transform", "translate(0," + +(25) + ")")
+            .attr("transform", "translate("+0+"," + (height - length-10)+ ")")
             .attr("color", "white")
             .call(d3.axisRight(scale_y_axis));
 
@@ -158,7 +159,7 @@ function Chart({ width, height, data }){
             xAxis.call(d3.axisBottom(newX))
             yAxis.call(d3.axisLeft(newY))
 
-            // update circle position
+            // update rect position
             selection
             .selectAll("rect")
             .attr('x', function(d) {return newX(d.Sepal_Length)})

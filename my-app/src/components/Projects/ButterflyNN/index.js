@@ -1,4 +1,4 @@
-import { Navibar } from "../../Nav/Nav"
+import { Navibar, NavBar2 } from "../../Nav/Nav"
 import {useState, useEffect} from 'react';
 import "./butter.css"
 import links from './butterfly_links.json'
@@ -76,7 +76,7 @@ const Butterfly = () => {
 
         return (
             <>
-                <Navibar />
+                <NavBar2 />
                 <div className='term' >
                 <div class='container'>
                 

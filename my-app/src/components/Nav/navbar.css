@@ -23,6 +23,10 @@
 }
 .navbar-collapse {
   background-color: #282828;
+  display:block;
+}
+.navbar {
+  background-color: #282828;
 }
 
 .nav-link:hover {

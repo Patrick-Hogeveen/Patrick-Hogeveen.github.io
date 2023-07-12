@@ -1,6 +1,6 @@
 
 
-import { Navibar } from "../../Nav/Nav"
+import { Navibar, NavBar2 } from "../../Nav/Nav"
 
 import "./index.css"
 import Scene from './scene';
@@ -9,7 +9,7 @@ function Threed() {
     
     return (
       <>
-      <Navibar />
+      <NavBar2 />
       <div id="container">
         <Scene />
         
